@@ -5,8 +5,9 @@ import tw from "twrnc";
 export default function Index() {
   const [text, setText] = useState<string>("");
   return (
-    <View style={tw`flex justify-center items-center`}>
-      <View
+    <>
+      <View style={tw`flex justify-center items-center bg-[#F3F4F6]`}>
+        <View
           style={tw`flex justify-center items-center w-20 h-20 bg-gray-200 rounded-full mt-12`}
         >
           <Image
@@ -14,33 +15,37 @@ export default function Index() {
             style={{ width: 50, height: 50 }}
           />
         </View>
-        <Text style={tw`font-semibold text-[#000000] text-4xl pt-8`}>Let's get started</Text>
-        <Text style={tw`text-[#9CA3AF] font-semibold text-lg pt-4`}>Sign up or login to your account.</Text>
-        <View>
-          <Text>Email</Text>
+        <Text style={tw`font-semibold text-[#000000] text-[45px] pt-8`}>
+          Let's get started
+        </Text>
+        <Text style={tw`text-[#9CA3AF] font-semibold text-[19px] pt-4`}>
+          Sign up or login to your account.
+        </Text>
+        <View style={tw`mt-8`}>
+          <Text style={tw`text-[#6B7280] text-xl font-normal`}>Email</Text>
           <TextInput
-            style={tw`bg-gray-200 h-20 w-40`}
+            style={tw`bg-[#FFFFFF] mt-1 text-[#D1D5DB] text-lg pl-4 font-semibold h-20 w-95 rounded-xl shadow:bg-black shadow-xl`}
             placeholder="Enter your Email"
             value={text}
           />
         </View>
-        <View>
-          <Text>Password</Text>
+        <View style={tw`mt-4`}>
+          <Text style={tw`text-[#6B7280] text-xl font-normal`}>Password</Text>
           <TextInput
-            style={tw`bg-gray-200 h-20 w-40`}
+            style={tw`bg-[#FFFFFF] mt-1 text-[#D1D5DB] text-lg pl-4 font-semibold h-20 w-95 rounded-xl shadow:bg-black shadow-xl`}
             placeholder="Enter your Password"
             value={text}
           />
         </View>
         <View>
-          <TouchableOpacity style={tw`bg-[#000000]`}>
-            <Text style={tw`text-[#FFFFFF]`}>Continue</Text>
+          <TouchableOpacity style={tw`flex justify-center items-center bg-[#000000] w-95 h-20 rounded-xl`}>
+            <Text style={tw`text-[#FFFFFF] font-semibold text-2xl`}>Continue</Text>
           </TouchableOpacity>
         </View>
-        <View className="flex-row items-center my-6 px-4">
-          <Text className="mx-4 text-gray-400 text-sm">or continue with</Text>
-          <View className="flex-1 h-[1px] bg-gray-300" />
+        <View style={tw`flex-row justify-center items-center my-6 px-4`}>
+          <Text style={tw`text-[#6B7280] font-semibold text-xl`}>or continue with</Text>
         </View>
-    </View>
+      </View>
+    </>
   );
 }
