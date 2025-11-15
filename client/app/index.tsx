@@ -22,7 +22,7 @@ export default function Index() {
           Sign up or login to your account.
         </Text>
         <View style={tw`mt-8`}>
-          <Text style={tw`text-[#6B7280] text-xl font-normal`}>Email</Text>
+          <Text style={tw`text-[#6B7280] text-xl font-semibold`}>Email</Text>
           <TextInput
             style={tw`bg-[#FFFFFF] mt-1 text-[#D1D5DB] text-lg pl-4 font-semibold h-20 w-95 rounded-xl shadow:bg-black shadow-xl`}
             placeholder="Enter your Email"
@@ -30,20 +30,29 @@ export default function Index() {
           />
         </View>
         <View style={tw`mt-4`}>
-          <Text style={tw`text-[#6B7280] text-xl font-normal`}>Password</Text>
+          <Text style={tw`text-[#6B7280] text-xl font-semibold`}>Password</Text>
           <TextInput
             style={tw`bg-[#FFFFFF] mt-1 text-[#D1D5DB] text-lg pl-4 font-semibold h-20 w-95 rounded-xl shadow:bg-black shadow-xl`}
             placeholder="Enter your Password"
             value={text}
           />
+          <Text style={tw`text-[#6B7280] font-semibold text-xl mt-2`}>
+            Forgot Password?
+          </Text>
         </View>
         <View style={tw`mt-4`}>
-          <TouchableOpacity style={tw`flex justify-center items-center bg-[#000000] w-95 h-20 rounded-xl`}>
-            <Text style={tw`text-[#FFFFFF] font-semibold text-2xl`}>Continue</Text>
+          <TouchableOpacity
+            style={tw`flex justify-center items-center bg-[#000000] w-95 h-20 rounded-xl`}
+          >
+            <Text style={tw`text-[#FFFFFF] font-semibold text-2xl`}>
+              Continue
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={tw`flex-row justify-center items-center my-6 px-4`}>
-          <Text style={tw`text-[#6B7280] font-semibold text-xl`}>or continue with</Text>
+          <Text style={tw`text-[#6B7280] font-semibold text-xl`}>
+            or continue with
+          </Text>
         </View>
       </View>
     </>
