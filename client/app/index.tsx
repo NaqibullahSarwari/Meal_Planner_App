@@ -37,7 +37,7 @@ export default function Index() {
             value={text}
           />
         </View>
-        <View>
+        <View style={tw`mt-4`}>
           <TouchableOpacity style={tw`flex justify-center items-center bg-[#000000] w-95 h-20 rounded-xl`}>
             <Text style={tw`text-[#FFFFFF] font-semibold text-2xl`}>Continue</Text>
           </TouchableOpacity>
