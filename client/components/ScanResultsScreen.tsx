@@ -26,7 +26,7 @@ const ScanResultsScreen = () => {
           </Text>
         </View>
         <View
-          style={tw`bg-white w-95 h-32 rounded-3xl shadow:bg-gray-400 shadow-lg mt-4`}
+          style={tw`bg-white w-95 h-40 rounded-3xl shadow:bg-gray-400 shadow-lg mt-4`}
         >
           <Text style={tw`font-semibold text-[#000000] text-[26px] pl-6 pt-8`}>
             Nutrition Facts
