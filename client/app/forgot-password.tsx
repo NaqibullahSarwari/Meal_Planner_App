@@ -1,5 +1,5 @@
 import tw from "twrnc";
-import ForgotPassword from "../components/ForgotPassword";
+import ForgotPassword from "../components/ForgotPasswordScreen";
 import { View } from "react-native";
 
 export default function ForgotPasswordScreen() {

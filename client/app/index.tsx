@@ -1,9 +1,11 @@
-import RegisterScreen from "../components/RegisterScreen";
+import OnboardingScreen from "@/components/OnboardingScreen";
+import SetNewPasswordScreen from "../components/SetNewPasswordScreen"
 
 export default function Index() {
   return (
     <>
-      <RegisterScreen/>
+      <OnboardingScreen/>
+      {/* <SetNewPasswordScreen/> */}
     </>
   );
 }

@@ -13,13 +13,6 @@ const InputPassword = () => {
           style={tw`bg-[#FFFFFF] mt-1 text-[#D1D5DB] text-lg pl-4 font-semibold h-20 w-95 rounded-xl shadow:bg-black shadow-md`}
           placeholder="Enter your Password"
         />
-        <TouchableOpacity 
-        onPress={() => router.push('/forgot-password')}
-        >
-        <Text style={tw`mt-2 text-[#6B7280] font-semibold text-xl`}>
-            Forgot Password?
-          </Text>
-        </TouchableOpacity>
       </View>
     </>
   );

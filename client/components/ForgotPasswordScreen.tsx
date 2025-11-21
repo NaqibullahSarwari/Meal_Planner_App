@@ -24,11 +24,11 @@ const ForgotPassword = () => {
           onPress={() => router.back()}
           style={tw`items-center`}
         >
-          <Text style={tw`mt-4 text-[#6B7280] font-semibold text-xl`}>
+          <Text style={tw`mt-2 text-[#6B7280] pr-55 font-semibold text-xl`}>
             Back to login
           </Text>
         </TouchableOpacity>
-        <View style={tw`flex justify-bottom items-bottom`}>
+        <View style={tw`flex-1 justify-end pb-5`}>
           <SendCode />
         </View>
       </View>

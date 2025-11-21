@@ -1,4 +1,5 @@
-import { Stack } from 'expo-router';
+import { Stack } from "expo-router";
+import tw from "twrnc"
 
 export default function Layout() {
   return (
@@ -6,27 +7,62 @@ export default function Layout() {
       screenOptions={{
         headerShown: true,
         headerStyle: {
-          backgroundColor: '#F9FAFB',
+          backgroundColor: "#F9FAFB",
         },
-        headerTintColor: '#000',
+        headerTintColor: "#000",
         headerTitleStyle: {
-          fontWeight: 'bold',
+          fontWeight: "bold",
         },
       }}
     >
-      <Stack.Screen 
-        name="index" 
-        options={{ 
-          title: 'Login',
-          headerShown: false // Hide header on login screen if desired
-        }} 
+      <Stack.Screen
+        name="index"
+        options={{
+          title: "Login",
+          headerShown: false, // Hide header on login screen if desired
+        }}
       />
-      <Stack.Screen 
-        name="forgot-password" 
-        options={{ 
-          title: 'Forgot Password',
-          headerBackTitle: 'Back',
-        }} 
+      <Stack.Screen
+        name="forgot-password"
+        options={{
+          title: "Forgot Password",
+          headerBackTitle: "Back",
+        }}
+      />
+      <Stack.Screen
+        name="verification-code"
+        options={{
+          title: "Vertification Code",
+          headerBackTitle: "Back",
+        }}
+      />
+      <Stack.Screen
+        name="login-screen"
+        options={{
+          title: "",
+          headerBackTitle: "Back",
+        }}
+      />
+      <Stack.Screen
+        name="register-screen"
+        options={{
+          title: "",
+          headerBackTitle: "Back",
+        }}
+      />
+      <Stack.Screen
+        name="setnewpasswordscreen"
+        options={{
+          title: "",
+          headerBackTitle: "Back",
+        }}
+      />
+      <Stack.Screen     
+        name="scan-results-screen"
+        options={{
+          title: "Scan Results",
+          headerBackTitle: "Back",
+        }}
       />
     </Stack>
   );
